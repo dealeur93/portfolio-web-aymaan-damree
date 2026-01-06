@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  transition: background-color 0.05s linear;
+}
+
+.space {
+  height: 4000px; 
+}
+

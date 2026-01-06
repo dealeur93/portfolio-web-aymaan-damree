@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#container {
+  width: 500px;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);   
+  grid-template-rows: repeat(5, 1fr);
+
+  grid-template-areas:
+    "seven seven seven seven six"
+    "eight three three two   six"
+    "eight four  one   two   six"
+    "eight four  five  five  five"
+    "eight nine  nine  nine  nine";
+}
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 2rem/1 sans-serif;
+}
+
+
+
+#item1 { grid-area: one;  background:#ff7a18; }   
+#item2 { grid-area: two;  background:#c6ff1a; }   
+#item3 { grid-area: three;background:#1aff3b; }   
+#item4 { grid-area: four; background:#3355ff; }   
+#item5 { grid-area: five; background:#ffb5f1; }   
+#item6 { grid-area: six;  background:#09ffd0; }   
+#item7 { grid-area: seven;background:#f5ff7a; }   
+#item8 { grid-area: eight;background:#1f6f7d; }   
+#item9 { grid-area: nine; background:#9fffff; }   
+

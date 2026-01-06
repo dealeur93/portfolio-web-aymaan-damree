@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+.block {
+  width: 90%;
+  height: 150px;
+  margin: 40px auto;
+  border: 2px solid #444;
+  overflow: auto; 
+  background-color: #eee;
+  white-space: nowrap; 
+  scroll-behavior: smooth;
+}
+
+.inner {
+  display: inline-flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.item {
+  min-width: 150px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+

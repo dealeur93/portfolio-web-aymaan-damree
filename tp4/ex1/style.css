@@ -1,0 +1,54 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+
+div[id^="paragraphe"] {
+  width: 600px;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+div h2 {
+  text-align: center;
+}
+
+div p {
+  border: 3px solid black;
+  padding: 10px;
+  display: none; 
+}
+
+
+ul li:nth-child(1) a { color: red; }
+#paragraphe1 h2 { color: red; }
+#paragraphe1 p { border-color: red; }
+
+ul li:nth-child(2) a { color: blue; }
+#paragraphe2 h2 { color: blue; }
+#paragraphe2 p { border-color: blue; }
+
+ul li:nth-child(3) a { color: green; }
+#paragraphe3 h2 { color: green; }
+#paragraphe3 p { border-color: green; }
+
+
+div:target p {
+  display: block;
+}
+

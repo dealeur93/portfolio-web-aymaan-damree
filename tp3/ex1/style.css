@@ -1,0 +1,22 @@
+
+#bloc {
+  width: 300px;
+  height: 200px;
+  background-color: #ff7b00; 
+  margin: 20px auto; 
+}
+
+
+@media (max-width: 960px) {
+  #bloc {
+      background-color: #0099ff; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  #bloc {
+      background-color: #8bff00; 
+  }
+}
+

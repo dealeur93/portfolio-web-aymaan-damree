@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP Canvas – Exercice 1</title>
+    <style>
+        body {
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding-top: 40px;
+            font-family: Arial;
+        }
+
+        #myCanvas {
+            border: 1px solid #000;
+            background: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a252f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <button id="next">Figure suivante</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

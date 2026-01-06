@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TP3 – Exercices</title>
+
+  
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    :root {
+      /* New Palette From Main Style */
+      --bg-color: #F0F9F6;
+      --sidebar-bg: #E0F2F1;
+      --primary: #4DB6AC;
+      --primary-dark: #00796B;
+      --accent: #80CBC4;
+      --text-dark: #263238;
+      --white: #FFFFFF;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-dark);
+      font-family: "Outfit", "Poppins", sans-serif;
+      padding: 20px;
+    }
+
+    .conteneur-tp {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 0 auto;
+      max-width: 1400px;
+    }
+
+    /* Bloc d'exercice */
+    .bloc-exercice {
+      background: var(--white);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+    }
+
+    .bloc-exercice:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .bloc-exercice h3 {
+      color: var(--primary-dark);
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Zone commentaire */
+    .commentaire {
+      background: #F8FDFA;
+      border-left: 5px solid var(--primary);
+      padding: 20px 25px;
+      border-radius: 0 10px 10px 0;
+      margin-top: 25px;
+    }
+
+    .commentaire h4,
+    .commentaire h3 {
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .commentaire p {
+      color: var(--text-dark);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--primary-dark);
+      font-weight: 800;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 style="margin:20px;">TP3 – Exercices 1 et 3</h2>
+
+  <div class="conteneur-tp">
+
+    
+    <section class="bloc-exercice">
+      <h3>Exercice 1</h3>
+
+      <iframe src="ex1/index.html" style="height:250px;"></iframe>
+
+      <div class="commentaire">
+        <h3>Commentaire – Exercice 1</h3>
+        <p>
+          Les <strong>Media Queries</strong> (`@media`) sont au cœur de cet exercice pour gérer le responsive design.
+          J'ai appris à modifier la couleur d'un bloc selon la taille de l'écran en utilisant des points de rupture
+          (breakpoints) en pixels.
+        </p>
+        <p>
+          C'est sûrement le concept que j'ai le mieux compris car le résultat est immédiat : on redimensionne la fenêtre
+          et hop, ça change.
+          C'est logique et visuel, tout ce que j'aime. Cela me rassure pour la création de pages mobiles.
+        </p>
+      </div>
+
+    </section>
+
+
+    
+    <section class="bloc-exercice">
+      <h3>Exercice 3</h3>
+
+      <iframe src="ex3/index.html" style="height:500px;"></iframe>
+
+      <div class="commentaire">
+        <h3>Commentaire – Exercice 3</h3>
+        <p>
+          Le célèbre "Menu Burger" sans JavaScript ! L'astuce repose sur l'utilisation du sélecteur <code>:target</code>
+          qui permet de cibler un élément activé par une ancre URL.
+        </p>
+        <p>
+          Je ne savais même pas qu'on pouvait faire des interactions comme ça juste en CSS.
+          J'ai eu du mal à orchestrer les transitions : faire disparaître le menu desktop et apparaître le bouton
+          mobile.
+          C'est beaucoup de "bricolage" CSS (display block/none) mais c'est gratifiant quand ça marche sans une seule
+          ligne de script.
+        </p>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+
+</html>

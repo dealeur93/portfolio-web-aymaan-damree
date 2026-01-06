@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>site tp aymaan</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-bottom: 20px;">
+      <div onclick="document.querySelector('.lien-tp[data-tp=\'Accueil\']').click()" style="cursor:pointer;"
+        class="header-titre">
+        <h1>Développement Front</h1>
+        <p class="sous-titre">BUT2 MMI – Aymaan</p>
+      </div>
+    </div>
+
+    <nav id="menu-haut">
+      <ul class="liste-tp">
+        <li><a href="bienvenue.html" class="lien-tp" data-tp="Accueil" target="cadre-contenu">Accueil</a></li>
+        <li><a href="tp1/tp1.html" class="lien-tp" data-tp="TP1" target="cadre-contenu">TP1</a></li>
+        <li><a href="tp2/tp2.html" class="lien-tp" data-tp="TP2" target="cadre-contenu">TP2</a></li>
+        <li><a href="tp3/tp3.html" class="lien-tp" data-tp="TP3" target="cadre-contenu">TP3</a></li>
+        <li><a href="tp4/tp4.html" class="lien-tp" data-tp="TP4" target="cadre-contenu">TP4</a></li>
+        <li><a href="tp5/tp5.html" class="lien-tp" data-tp="TP5" target="cadre-contenu">TP5</a></li>
+        <li><a href="tp6/tp6.html" class="lien-tp" data-tp="TP6" target="cadre-contenu">TP6</a></li>
+        <li><a href="tp7/tp7.html" class="lien-tp" data-tp="TP7" target="cadre-contenu">TP7</a></li>
+        <li><a href="tp8/tp8.html" class="lien-tp" data-tp="TP8" target="cadre-contenu">TP8</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="conteneur-principal">
+
+    <main id="zone-contenu">
+      <iframe name="cadre-contenu" src="bienvenue.html"></iframe>
+    </main>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

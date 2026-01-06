@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TP1 – Exercices</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    :root {
+      /* New Palette From Main Style */
+      --bg-color: #F0F9F6;
+      --sidebar-bg: #E0F2F1;
+      --primary: #4DB6AC;
+      --primary-dark: #00796B;
+      --accent: #80CBC4;
+      --text-dark: #263238;
+      --white: #FFFFFF;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-dark);
+      font-family: "Outfit", "Poppins", sans-serif;
+      padding: 20px;
+    }
+
+    .conteneur-tp {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 0 auto;
+      max-width: 1400px;
+    }
+
+    /* Bloc d'exercice */
+    .bloc-exercice {
+      background: var(--white);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+    }
+
+    .bloc-exercice:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .bloc-exercice h3 {
+      color: var(--primary-dark);
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Zone commentaire */
+    .commentaire {
+      background: #F8FDFA;
+      border-left: 5px solid var(--primary);
+      padding: 20px 25px;
+      border-radius: 0 10px 10px 0;
+      margin-top: 25px;
+    }
+
+    .commentaire h4,
+    .commentaire h3 {
+      margin-bottom: 12px;
+      color: var(--primary-dark);
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .commentaire p {
+      color: var(--text-dark);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--primary-dark);
+      font-weight: 800;
+      margin: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h2 style="margin:20px;">TP1 – Exercices 1 et 2</h2>
+
+  <div class="conteneur-tp">
+
+    
+    <section class="bloc-exercice">
+      <h3>Exercice 1</h3>
+
+      <iframe src="ex1/index.html" style="height:1050px;"></iframe>
+
+      <div class="commentaire">
+        <h3>Commentaire – Exercice 1</h3>
+        <p>
+          Pour cet exercice, j'ai dû plonger dans la logique <strong>Flexbox</strong>.
+          L'objectif était de structurer une mise en page complexe en utilisant principalement
+          <code>display: flex</code>,
+          ce qui m'a demandé de bien comprendre les axes avec <code>flex-direction</code> (pour passer de ligne à
+          colonne) et l'alignement via <code>justify-content</code> et <code>align-items</code>.
+        </p>
+        <p>
+          La difficulté principale a été la rigueur demandée : reproduire une maquette au pixel près est un vrai défi
+          pour moi.
+          J'ai parfois eu du mal à gérer les espacements précis et les bordures imbriquées.
+          Même si le code fonctionne, je sens que ma logique d'imbrication des <code>div</code> pourrait être optimisée.
+          C'est un exercice formateur qui m'a montré l'importance de la structure en amont avant de coder.
+        </p>
+      </div>
+
+    </section>
+
+    
+    <section class="bloc-exercice">
+      <h3>Exercice 2</h3>
+
+      <iframe src="ex2/index.html" style="height:1226px;"></iframe>
+
+      <div class="commentaire">
+        <h3>Commentaire – Exercice 2</h3>
+        <p>
+          Ici, le challenge était de reproduire une maquette <strong>sans toucher au HTML</strong>.
+          J'ai dû ruser avec le CSS, notamment en utilisant les propriétés <code>background</code> pour placer les
+          images
+          de décoration (`wrap.gif`, `header.gif`) et le positionnement relatif/absolu pour déplacer les éléments.
+        </p>
+        <p>
+          C'est type d'exercice que je trouve le plus "scolaire" et fastidieux car il faut être très précis.
+          J'ai rencontré des difficultés pour aligner parfaitement le texte sans modifier la structure de la page.
+          Cependant, cela m'a forcé à mieux comprendre le flux du document et comment le CSS peut transformer
+          radicalement
+          l'apparence d'un contenu brut.
+        </p>
+      </div>
+
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>
