@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>TP6 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
@@ -107,7 +107,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 1</h3>
 
@@ -115,21 +115,35 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 1</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          L'effet "Rideau" est un classique. Ici, on joue sur le CSS pur avec <code>overflow: hidden</code> et
-          une transition sur la propriété <code>height</code> ou <code>transform</code> au survol.
+          Utilisation de CSS pur pour un effet "Reveal". Combinaison de <code>overflow: hidden</code> sur le conteneur
+          et
+          d'une <code>transition</code> sur la hauteur (`height`) ou le positionnement pour dévoiler le contenu au
+          survol (`:hover`).
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          C'est reposant de ne pas avoir de JavaScript complexe.
-          J'ai juste dû faire attention au positionnement absolu du texte qui apparaît "derrière".
-          C'est simple, efficace, et ça marche toujours bien pour présenter des projets.
+          Facile. C'est un grand classique du CSS, il faut juste être rigoureux sur le positionnement absolu/relatif.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Permet de présenter des infos de manière élégante sans encombrer la page au premier abord.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Propre et efficace. C'est le genre d'effet qui fait toujours "pro" sur un portfolio.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 2</h3>
 
@@ -137,22 +151,34 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 2</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Une compilation d'animations CSS : loaders, boutons, effets de texte.
-          L'outil principal ici est <code>@keyframes</code> pour définir les étapes de l'animation.
+          Création d'animations séquentielles avec <code>@keyframes</code>.
+          Définition des étapes clés (0%, 50%, 100%) et contrôle du timing avec <code>animation-duration</code>,
+          <code>animation-delay</code> et <code>animation-iteration-count</code>.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          C'est long à écrire ! Définir 0%, 50%, 100% pour chaque petit élément...
-          Mais c'est là que je peux m'exprimer. J'ai aimé créer le petit loader, même si caler le timing
-          (<code>animation-delay</code>)
-          pour que ce soit fluide demande beaucoup d'essais. C'est fastidieux mais créatif.
+          Moyenne. Ce n'est pas dur en soi, mais c'est très long à faire pour affiner chaque mouvement.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Donne le contrôle total sur le mouvement, bien plus précis qu'une simple transition. Idéal pour des loaders.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Le loader est fluide, j'ai bien galéré à synchroniser les trois points mais ça rend bien.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 5</h3>
 
@@ -160,15 +186,28 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 5</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Créer une bannière pub animée... le cauchemar des internautes mais un bon défi pour nous.
-          Il fallait synchroniser une animation CSS (arrivée du texte) avec du JS pour le mouvement continu des
-          éléments.
+          Combinaison JS/CSS pour une animation continue. Utilisation de <code>requestAnimationFrame</code> pour
+          garantir que le déplacement JS (modifiant potentiellement le DOM ou un canvas) soit synchronisé
+          avec le taux de rafraîchissement de l'écran (60fps), évitant les saccades.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          La difficulté était de faire cohabiter les deux sans que ça saccade.
-          J'ai appris à utiliser <code>requestAnimationFrame</code> pour que l'animation JS soit fluide.
-          C'est un exercice très concret "métier", on se sent vraiment designer web.
+          Difficile. Comprendre pourquoi <code>setInterval</code> est mauvais pour l'animation et passer à RAF
+          (RequestAnimationFrame).
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Vital pour la performance dès qu'on fait de l'animation complexe ou du jeu web.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          C'est ultra fluide. Visuellement un peu agressif (c'est une pub après tout) mais techniquement au point.
         </p>
       </div>
 

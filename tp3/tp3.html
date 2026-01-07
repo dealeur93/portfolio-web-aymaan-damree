@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <title>TP3 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
     :root {
-      /* New Palette From Main Style */
       --bg-color: #F0F9F6;
       --sidebar-bg: #E0F2F1;
       --primary: #4DB6AC;
@@ -107,7 +106,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 1</h3>
 
@@ -115,22 +114,34 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 1</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Les <strong>Media Queries</strong> (`@media`) sont au cœur de cet exercice pour gérer le responsive design.
-          J'ai appris à modifier la couleur d'un bloc selon la taille de l'écran en utilisant des points de rupture
-          (breakpoints) en pixels.
+          Introduction aux <strong>Media Queries</strong> (`@media`). J'ai appris à définir des points de rupture
+          (breakpoints)
+          en pixels pour modifier le CSS (couleurs, tailles) selon la largeur du viewport.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          C'est sûrement le concept que j'ai le mieux compris car le résultat est immédiat : on redimensionne la fenêtre
-          et hop, ça change.
-          C'est logique et visuel, tout ce que j'aime. Cela me rassure pour la création de pages mobiles.
+          Facile. La logique "Si écran plus petit que X -> Appliquer ça" est très intuitive.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          C'est la base absolue du web moderne pour faire des sites compatibles mobile (Responsive Design).
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Le changement est instantané quand on redimensionne, c'est satisfaisant de voir la réaction immédiate du site.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 3</h3>
 
@@ -138,16 +149,26 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 3</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Le célèbre "Menu Burger" sans JavaScript ! L'astuce repose sur l'utilisation du sélecteur <code>:target</code>
-          qui permet de cibler un élément activé par une ancre URL.
+          Création d'un menu interactif sans JavaScript grâce à la pseudo-classe <code>:target</code>.
+          Cela permet de changer le CSS d'un élément quand son ID est présent dans l'URL (ancre).
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          Je ne savais même pas qu'on pouvait faire des interactions comme ça juste en CSS.
-          J'ai eu du mal à orchestrer les transitions : faire disparaître le menu desktop et apparaître le bouton
-          mobile.
-          C'est beaucoup de "bricolage" CSS (display block/none) mais c'est gratifiant quand ça marche sans une seule
-          ligne de script.
+          Moyenne. C'est une astuce un peu détournée, donc pas le truc le plus logique au début.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Montre qu'on peut gérer des états simples (ouvert/fermé) juste en CSS pour des interfaces légères.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Ça marche nickel, mais ça manque un peu d'accessibilité comparé à un vrai bouton JS contrôlé.
         </p>
       </div>
 

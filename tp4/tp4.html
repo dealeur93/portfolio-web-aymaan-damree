@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>TP4 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
@@ -107,7 +107,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 1</h3>
 
@@ -115,22 +115,35 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 1</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Premier contact avec l'interactivité. Ici, on utilise des sélecteurs avancés comme <code>:nth-child</code> et
-          <code>:target</code>
-          pour créer une navigation interne. Le but était de simuler des onglets.
+          Utilisation de sélecteurs CSS avancés comme le combinateur de "frère suivant" (`~`) et la pseudo-classe
+          <code>:checked</code>
+          (détournée via des inputs radio cachés) ou <code>:target</code> pour créer une navigation par onglets
+          fonctionnelle sans JS.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          C'est frustrant de devoir tout prévoir en CSS alors qu'un simple script ferait l'affaire.
-          J'ai eu des difficultés à comprendre comment cibler "le deuxième paragraphe du troisième bloc"
-          juste avec des formules mathématiques CSS. C'est puissant mais ça manque de souplesse pour moi.
+          Difficile. C'est de la logique pure appliquée au CSS, ça demande une rigueur d'algorithmique.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Montre la puissance du CSS moderne, capable de gérer des logiques d'affichage complexes.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Ça fonctionne, mais c'est une solution très rigide. Si on veut ajouter un onglet, il faut tout casser.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 3</h3>
 
@@ -138,15 +151,27 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 3</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          L'objectif : styliser un tableau complexe sans toucher au HTML, uniquement avec <code>:nth-of-type</code>.
-          C'est un travail de précision presque mathématique (pair, impair, tous les 3 éléments...).
+          Maîtrise des pseudo-classes structurelles <code>:nth-child()</code> et <code>:nth-of-type()</code> avec des
+          formules
+          (ex: `2n+1`, `3n`) pour cibler des éléments précis dans un tableau HTML sans ajouter de classes partout.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          Honnêtement, c'était casse-tête. Je comprends l'intérêt pour garder le HTML propre,
-          mais calculer quelle règle s'applique à quelle ligne m'a demandé beaucoup d'efforts.
-          J'ai fini par y arriver par tâtonnements, mais je ne suis pas sûr de pouvoir le refaire du premier coup sans
-          antisèche.
+          Moyenne. Il faut juste trouver la bonne formule mathématique pour la répétition.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Permet de garder un code HTML ultra-propre et sémantique, sans pollution de classes pour le style.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Très maintenable : si on ajoute une ligne au tableau, le style s'adapte tout seul. C'est top.
         </p>
       </div>
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>TP8 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
@@ -107,7 +107,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 1</h3>
 
@@ -115,23 +115,36 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 1</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Animation de sprite contrôlable au clavier.
-          Le cœur du code, c'est la méthode <code>drawImage()</code> avec ses 9 paramètres pour découper une partie de
-          l'image source.
+          Animation de <strong>Sprite</strong>. Utilisation avancée de
+          <code>ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)</code>
+          pour découper une portion d'une image (sprite sheet) et l'afficher. Gestion du frame rate pour animer la
+          marche.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          Comprendre comment calculer la position `sx` et `sy` (source x, source y) en fonction de la direction a été
-          complexe.
-          J'ai eu des bugs où le personnage clignotait ou affichait la moitié d'une autre frame.
-          C'est très technique mais c'est la base du jeu vidéo 2D.
+          Très difficile. Les 9 paramètres de <code>drawImage</code> sont un cauchemar à retenir et à calculer sans se
+          tromper.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Comprendre comment fonctionne l'animation 2D traditionnelle (comme dans les vieux jeux vidéos).
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Le personnage marche et s'oriente correctement. C'était dur mais le résultat "jeu vidéo" est gratifiant.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 2</h3>
 
@@ -139,22 +152,34 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 2</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Le scrolling infini. Ici, l'astuce est de dessiner deux fois l'image de fond et de réinitialiser la position
-          quand la première sort de l'écran.
-          C'est une boucle logique que j'ai mis du temps à visualiser.
+          Création d'un <strong>scrolling infini</strong> (boucle). Technique qui consiste à dessiner deux images de
+          fond mises bout à bout
+          et de réinitialiser leur position (`x = 0`) dès que la première sort complètement de l'écran.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          J'ai passé du temps à ajuster la vitesse de l'animation de Mario par rapport au sol pour que ça ne fasse pas
-          "glissement".
-          C'est purement du réglage visuel, ce qui me correspond mieux que les maths pures.
+          Moyenne. C'est surtout de la logique de boucle : comprendre quand "téléporter" l'image au début.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Base essentielle pour tout jeu de type "Runner" ou side-scroller.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          L'illusion est parfaite, on a vraiment l'impression d'avancer sans fin.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 3</h3>
 
@@ -162,14 +187,31 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 3</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Ici, on devait utiliser un fichier de données externe (`infoSprite.js`) pour savoir où découper nos gouttes
-          d'eau.
-          C'est la première fois que je manipule un tableau d'objets aussi structuré pour dessiner.
+          Utilisation de structures de données (Objets/Arrays, JSON) pour piloter l'affichage.
+          Au lieu de tout coder de A à Z, on lit un fichier `infoSprite` qui contient les coordonnées de chaque élément
+          à
+          dessiner.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          C'était abstrait de faire le lien entre des chiffres dans un tableau et le dessin à l'écran.
-          J'ai dû apprendre à parcourir ce tableau et à extraire les bonnes valeurs.
+          Difficile. Faire le lien abstrait entre "ce tableau de données" et "ce qui s'affiche à l'écran".
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Apprendre à rendre son code modulaire et non totalement fixé. Indispensable pour gérer des niveaux de jeu ou
+          des
+          assets nombreux.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Code très propre et évolutif. Si on change le fichier de données, le dessin change sans toucher au code
+          principal.
         </p>
       </div>
 

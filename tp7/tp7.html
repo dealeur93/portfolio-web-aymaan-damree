@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>TP7 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
@@ -107,7 +107,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 1</h3>
 
@@ -115,21 +115,37 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 1</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Ici, on dessine directement dans le navigateur avec l'API <strong>Canvas</strong>.
-          C'est littéralement de la géométrie appliquée : `moveTo(x, y)`, `lineTo(x, y)`, `arc()`.
+          Découverte de l'API <strong>Canvas 2D</strong>. Dessin procédural via JavaScript : déclaration du contexte
+          (`getContext('2d')`),
+          tracé de chemins (`beginPath`, `moveTo`, `lineTo`) et formes géométriques (`arc`, `rect`).
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          J'ai passé un temps fou sur la figure de la "Poule".
-          Calculer les coordonnées de chaque segment pour que ça ressemble à quelque chose, c'était l'enfer.
-          Je me suis trompé plein de fois de pixel. C'est gratifiant une fois fini, mais très laborieux.
+          Moyenne. C'est littéralement de la géométrie vectorielle par le code. Faut avoir un repère orthonormé dans la
+          tête.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Comprendre comment le navigateur dessine "bas-niveau". Utile pour générer des graphiques ou des visuels
+          dynamiques.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          J'ai réussi à dessiner la poule demandée, mais le code est un pavé de coordonnées illisible. Ça marche mais
+          c'est moche à lire.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 3</h3>
 
@@ -137,15 +153,28 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 3</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Rendre un canvas interactif demandait d'écouter les clics de la souris et de redessiner tout le canvas à
-          chaque changement.
-          Le concept de "boucle de dessin" est nouveau pour moi.
+          Rendre le Canvas interactif. Écoute de l'événement <code>mousedown</code> ou <code>mousemove</code>,
+          calcul des coordonnées relatives au canvas (`clientX - rect.left`) et mise en place d'une boucle de dessin
+          (effacer tout -> redessiner avec nouvel état).
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          J'ai eu du mal à gérer l'état des variables (couleur, taille) entre chaque clic.
-          Au début, mon rectangle ne s'effaçait pas et laissait des traces partout (`ctx.clearRect` est vital !).
-          C'est moins "facile" que le DOM classique mais beaucoup plus puissant pour faire des jeux.
+          Difficile. Le concept de "repaint" complet à chaque frame ou action est très différent du DOM où on modifie
+          juste un objet.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          C'est la base fondamentale du développement de jeux en HTML5.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Réactif et fonctionnel. On peut dessiner comme sur un mini-Paint, c'est assez ludique.
         </p>
       </div>
 

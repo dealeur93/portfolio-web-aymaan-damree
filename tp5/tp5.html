@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>TP5 – Exercices</title>
 
-  
+
   <link rel="stylesheet" href="../css/style.css">
 
   <style>
@@ -107,7 +107,7 @@
 
   <div class="conteneur-tp">
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 2</h3>
 
@@ -115,15 +115,28 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 2</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Changer le style en fonction du scroll... ça parait simple mais ça demande de calculer un ratio.
-          J'ai utilisé <code>window.scrollY</code> divisé par la hauteur totale de la page pour obtenir un pourcentage.
+          Interception de l'événement JS <code>scroll</code>. Calcul dynamique d'un ratio basé sur
+          <code>window.scrollY</code>
+          divisé par la hauteur totale disponible (`document.body.scrollHeight - window.innerHeight`) pour moduler le
+          CSS.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          Côté créatif, c'est super intéressant de voir la couleur évoluer.
-          Le plus dur a été de rendre l'effet fluide, j'ai dû ajouter une transition CSS pour éviter que ça "saute" trop
-          vite.
-          C'est le genre de détail interactif que je pourrais réutiliser.
+          Moyenne. La logique mathématique du pourcentage (0 à 1) est le point clé.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Créer un lien direct entre l'action de l'utilisateur (scroller) et le design de la page.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          C'est fluide grâce à l'ajout de transitions CSS, sinon ça saccaderait. L'effet est sympa.
         </p>
       </div>
 
@@ -131,7 +144,7 @@
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 4</h3>
 
@@ -139,22 +152,34 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 4</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Transformer le scroll vertical de la souris en défilement horizontal, c'est contre-intuitif à coder.
-          Il faut intercepter l'événement <code>wheel</code> et utiliser <code>preventDefault()</code> pour bloquer le
-          comportement naturel.
+          Utilisation de l'event <code>wheel</code> pour capturer la molette souris.
+          Usage impératif de <code>e.preventDefault()</code> pour annuler le scroll vertical natif et le remplacer par
+          une modification de la propriété <code>scrollLeft</code>.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          J'ai eu du mal avec la logique des axes : on scroll vers le bas mais le contenu part à gauche.
-          C'est un bon exercice technique, mais pour l'expérience utilisateur, je trouve ça parfois perturbant.
-          Ça m'a appris à manipuler les événements "par défaut" du navigateur.
+          Difficile. On change totalement le comportement naturel du navigateur, c'est délicat.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Permet des navigations horizontales originales type "galerie d'art".
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Techniquement ça marche, mais ça peut être déroutant pour l'utilisateur qui s'attend à descendre.
         </p>
       </div>
 
     </section>
 
 
-    
+
     <section class="bloc-exercice">
       <h3>Exercice 6</h3>
 
@@ -162,16 +187,27 @@
 
       <div class="commentaire">
         <h3>Commentaire – Exercice 6</h3>
+
+        <h4>Connaissances mises en jeu</h4>
         <p>
-          Le <strong>Parallaxe</strong> ! Enfin un effet "wahou".
-          Le principe est de faire bouger les éléments à des vitesses différentes (`data-speed`) lors du scroll.
-          Cela donne une vraie profondeur au design.
+          Principe du <strong>Parallaxe</strong> : faire bouger des plans à des vitesses différentes (`transform:
+          translateY`)
+          en fonction du scroll. Nécessite de multiplier la valeur de scroll par un coefficient de vitesse.
         </p>
+
+        <h4>Niveau de difficulté estimé</h4>
         <p>
-          Côté code, multiplier la position du scroll par un coefficient de vitesse (<code>transform: translateY</code>)
-          demande un peu de maths.
-          Je me suis embrouillé plusieurs fois dans les signes (- ou +) pour la direction du mouvement,
-          mais le résultat visuel en vaut vraiment la peine. C'est mon effet préféré du TP.
+          Difficile. Il faut bien caler les vitesses pour garder une cohérence de profondeur.
+        </p>
+
+        <h4>Intérêt de l'exercice</h4>
+        <p>
+          Donne une profondeur incroyable et un aspect très pro/premium au site.
+        </p>
+
+        <h4>Qualité du résultat</h4>
+        <p>
+          Mon effet préféré. Le rendu visuel est top et immersif.
         </p>
       </div>
 
